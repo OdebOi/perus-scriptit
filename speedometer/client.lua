@@ -83,7 +83,7 @@ Citizen.CreateThread(function()
 		if(IsPedInAnyVehicle(Ped)) then
 			local PedCar = GetVehiclePedIsIn(Ped, false)
 			if PedCar and GetPedInVehicleSeat(PedCar, -1) == Ped then
-				carSpeed = math.ceil(GetEntitySpeed(PedCar) * 3.6)
+				carSpeed = math.ceil(GetEntitySpeed(PedCar) * 3.6) -- Tätä vaihtamalla saat isomman luvun nopeusmittariin
 				fuel = GetVehicleFuelLevel(PedCar)
 				rpm = GetVehicleCurrentRpm(PedCar)
 				rpmfuel = 0
